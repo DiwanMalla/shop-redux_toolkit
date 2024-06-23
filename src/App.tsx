@@ -10,6 +10,10 @@ const App = () => {
       element: <RouterLayout />,
       children: [
         {
+          path: "/",
+          element: <Products />,
+        },
+        {
           path: "/products",
           element: <Products />,
         },

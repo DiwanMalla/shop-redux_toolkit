@@ -6,11 +6,11 @@ import { Outlet } from "react-router-dom";
 
 const RouterLayout = () => {
   return (
-    <Provider store={store}>
+    <div>
       <Header />
       <Outlet />
       <Footer />
-    </Provider>
+    </div>
   );
 };
 

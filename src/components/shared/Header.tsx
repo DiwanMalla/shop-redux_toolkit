@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const Header = () => {
   const cartProduct = useSelector((state) => state.cart);
   console.log(cartProduct);
@@ -7,10 +8,16 @@ const Header = () => {
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#">D1 Mart</Navbar.Brand>
-          <Nav.Link href="/">Product</Nav.Link>
+          <Navbar.Brand as={Link} to="#">
+            D1 Mart
+          </Navbar.Brand>
+          <Nav.Link as={Link} to="/">
+            Product
+          </Nav.Link>
 
-          <Nav.Link href="/cart">My Bag {cartProduct.length}</Nav.Link>
+          <Nav.Link as={Link} to="/cart">
+            My Bag {cartProduct.length}
+          </Nav.Link>
 
           <Form className="d-flex">
             <Form.Control

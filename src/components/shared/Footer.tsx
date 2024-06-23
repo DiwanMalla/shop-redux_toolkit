@@ -1,7 +1,6 @@
 import {
   MDBFooter,
   MDBContainer,
-  MDBIcon,
   MDBInput,
   MDBCol,
   MDBRow,
@@ -13,7 +12,6 @@ import {
   FaGoogle,
   FaInstagram,
   FaLinkedin,
-  FaSquareTwitter,
   FaTwitter,
 } from "react-icons/fa6";
 const Footer = () => {

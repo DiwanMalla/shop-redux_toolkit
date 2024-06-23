@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const Header = () => {
+  //@ts-expect-error
   const cartProduct = useSelector((state) => state.cart);
   console.log(cartProduct);
   return (

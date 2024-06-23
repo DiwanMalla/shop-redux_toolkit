@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { createSlice } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
@@ -5,9 +6,11 @@ const cartSlice = createSlice({
   initialState: [],
   reducers: {
     addItem(state, action) {
+      //@ts-expect-error
       state.push(action.payload);
     },
     remove(state, action) {
+      //@ts-expect-error
       return state.filter((item) => item.id !== action.payload);
     },
   },

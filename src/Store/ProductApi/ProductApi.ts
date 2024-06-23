@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const productApi = createApi({
@@ -12,4 +13,5 @@ export const productApi = createApi({
     }),
   }),
 });
+
 export const { useGetProductsQuery } = productApi;
